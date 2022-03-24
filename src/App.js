@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+// import AbcIcon from "@mui/icons-material/Abc";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="app__header">
+        <div className="app__headerLeft">
+          <div className="app__headerLeftIcon">
+            {/* <ArrowBackIcon /> */}
+            <AiOutlineArrowLeft />
+            <p className="weird">testing</p>
+          </div>
+          <div className="app__headerLeftText"></div>
+        </div>
+        <div className="app__headerMiddle">
+          <div className="app__headerMiddleContainer"></div>
+          <div className="app__headerMiddleText"></div>
+        </div>
+        <div className="app__headerRight">
+          <div className="app__headerRightAvatar">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
