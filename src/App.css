@@ -1,4 +1,279 @@
-.weird {
-  color: black;
-  font-size: 100px;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10.2vh;
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: hidden;
+
+  /* border: 1px solid black; */
+}
+
+.app__headerLeft {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.app__headerMiddle {
+  font-family: "Open Sans", sans-serif;
+  color: #1967d2;
+}
+.app__addedLine {
+  height: 1.5vh;
+  background-color: #d8d8d8;
+}
+.app__headerRight {
+  margin-right: 30px;
+}
+.app__headerLeftIcon {
+  margin-top: 7px;
+}
+.app__headerLeftText {
+  margin-left: 15px;
+  font-weight: 90;
+}
+.app__headerMiddleContainer {
+  height: 40px;
+  width: 150px;
+  background-color: #e8f0fe;
+  border-radius: 90px;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 2px;
+}
+.app__headerMiddleText {
+  margin-top: 7px;
+  font-weight: 90;
+}
+
+.app__input {
+  flex: 0.55;
+}
+.app__problem {
+  flex: 0.5;
+  padding: 60px;
+}
+.app__main {
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.app__problemPar {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+
+.app__problemtext1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.app__problemtext2 {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #79758b;
+  margin-left: 30px;
+}
+
+.app__problemTable {
+  margin-top: 50px;
+}
+
+.app__problemTableText {
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.table__container {
+  height: 300px;
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+}
+
+tr {
+  height: 60px;
+  width: 41vw;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d3d3d3;
+}
+td {
+  margin-left: 20px;
+}
+.app__attempt {
+  color: #87758f;
+}
+.app__level {
+  color: #87758f;
+}
+.app__WA {
+  color: #da5a4f;
+}
+.app__problemTime {
+  color: #5a2164;
+  margin-right: 10px;
+}
+.app__problemTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__submission {
+  display: flex;
+  align-items: center;
+}
+.app__problemIcon {
+  font-size: 20px;
+  color: gray;
+}
+.app__lastUpdate {
+  margin-top: 20px;
+}
+.app__lastUpdateText {
+  color: #a2978f;
+  font-size: 13px;
+  font-weight: 400;
+}
+.app__ProblemStartIntro {
+  margin-top: 30px;
+}
+.app__ProblemStartPar {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 13px;
+}
+
+.app__IntroImage {
+  width: 40vw;
+}
+.app__problemContributorsImg {
+  width: 40vw;
+}
+.app__problemProjectsImg {
+  width: 35vw;
+}
+.app__ProblemStartTextPar {
+  margin-top: 17px;
+}
+.app__problemExample {
+  border: 1px solid black;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 10px;
+}
+.app__examplePar {
+  margin-bottom: 15px;
+}
+
+ul.outside {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+li {
+  margin-top: 10px;
+}
+.app__textBold {
+  font-weight: bold;
+}
+.app__problemBold {
+  font-weight: bold;
+}
+
+.app__ProjectsSpecialIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.check {
+  color: #0078d7;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.app__projectsMoveRight {
+  display: flex;
+  align-items: center;
+}
+.app__warning {
+  font-size: 25px;
+  padding-top: 3px;
+  margin-right: 3px;
+}
+.app__aligning {
+  display: flex;
+}
+.app__projectsMoveRight {
+  margin-left: 30px;
+  margin-bottom: 8px;
+}
+.app__InputDataPar {
+  font-size: 20px;
+}
+.app__problemInputDataTop {
+  border: 1px solid #cccccc;
+  height: 40px;
+}
+.app__problemInputDataTop > p {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.app__problemInputDataBottom {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  color: #1967d9;
+  font-weight: 500;
+  background-color: #f5f5f5;
+}
+.app__DataSets {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.app__DataSets > p {
+  margin-left: 20px;
+}
+.secondOutside {
+  margin-left: 20px;
+}
+.app__problemExampleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+.app__ExampleInputFile {
+  display: flex;
+  flex-direction: column;
+}
+.app__ExampleDescription {
+  display: flex;
+  flex-direction: column;
+}
+.app__ExampleTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.app__problemDescriptionExample {
+  width: 47vw;
+}
+.app__Imagesize {
+  width: 40vw;
+}
+.app__textContainer {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
