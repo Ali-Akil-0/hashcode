@@ -31,3 +31,19 @@ code {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.app__InputSubmissions {
+  margin-top: 30px;
+}
+.app__input1 {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.app__fileUploadIcon {
+  font-size: 50px;
+}
+.app__inputParIcon {
+  margin-right: 17px;
+}

@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+.App {
+  overflow-x: hidden;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .app__header {
   display: flex;
   align-items: center;
@@ -56,11 +62,16 @@
 .app__problem {
   flex: 0.5;
   padding: 60px;
+  overflow-y: scroll;
+  height: 79.8vh;
 }
 .app__main {
   display: flex;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  position: fixed;
+  overflow-x: hidden;
+}
+.app__main::-webkit-scrollbar {
+  display: none;
 }
 .app__problemPar {
   font-size: 28px;
@@ -95,10 +106,13 @@
   width: 100%;
   display: flex;
 }
+.app__Table {
+  width: 100%;
+}
 
 tr {
   height: 60px;
-  width: 41vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d3d3d3;
@@ -266,7 +280,7 @@ li {
   margin-bottom: 20px;
 }
 .app__problemDescriptionExample {
-  width: 47vw;
+  width: 100%;
 }
 .app__Imagesize {
   width: 40vw;
@@ -276,4 +290,199 @@ li {
   padding: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.app__input {
+  height: 79.8vh;
+  background-color: #141621;
+  overflow-y: scroll;
+  color: white;
+  padding: 30px;
+}
+.app__SourceTitle {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.app__SourceDesc {
+  margin-bottom: 40px;
+}
+.app__tobold {
+  font-weight: bold;
+}
+.app__SourceCode {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+hr {
+  margin-left: -10px;
+}
+.app__tip {
+  margin-top: 20px;
+}
+.app__button {
+  background-color: #1967d2;
+  color: white;
+  width: 250px;
+  height: 38px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.app__button > p {
+  padding-top: 6px;
+}
+.app__SUbmitAttempt {
+  float: right;
+}
+.app__SubmitAttemptButton {
+  background-color: #1967d2;
+  color: white;
+  width: 175px;
+  height: 38px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-left: 70%;
+}
+.app__SubmitAttemptButton > p {
+  padding-top: 6px;
+}
+.app__file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.app__file::before {
+  content: "Choose file";
+  display: inline-block;
+  /* background: linear-gradient(top, #f9f9f9, #e3e3e3); */
+  /* border-radius: 3px; */
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  /* -webkit-user-select: none; */
+  cursor: pointer;
+  /* text-shadow: 1px 1px #fff; */
+  font-weight: 700;
+  font-size: 10pt;
+}
+.app__file:hover::before {
+  border-color: black;
+}
+.app__file:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.app__fileUpload {
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+.app__input1Par {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app__SlideButton {
+  position: absolute;
+  z-index: 10;
+  left: 45.76vw;
+  top: 50%;
+  cursor: pointer;
+}
+.app__SiderButtonContainer {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  height: 40px;
+  width: 40px;
+  background-color: #1967d2;
+  margin-right: 80px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.app__SlideButtonIcon {
+  color: white;
+  font-size: 27px;
+}
+.app__SlideButton2 {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  right: 0;
+  top: 50%;
+  width: 100px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+.app__hidingInputs {
+  display: none;
+}
+
+.app__problemGrow {
+  flex-grow: 1 !important;
+}
+
+.app__SiderButtonContainer2 {
+  width: 100px;
+}
+
+@media screen and (max-width: 845px) {
+  .app__input {
+    display: none;
+  }
+  .app__Inputgrowing {
+    display: inline !important;
+  }
+  .app__Inputgrowing > .app__input {
+    display: inline-block;
+  }
+  .app__problem {
+    flex-grow: 1 !important;
+  }
+  .app__SlideButton {
+    display: none;
+  }
+  .app__SlideButton2 {
+    display: none;
+  }
+  .app__SwitchButton {
+    display: inline !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  .app__headerMiddle {
+    display: none;
+  }
+}
+
+.app__SwitchButton {
+  position: absolute;
+  z-index: 10;
+  right: 90px;
+  top: 15vh;
+  cursor: pointer;
+  display: none;
+  width: 160px;
+}
+.app__SwitchButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 200px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #1967d2;
+  border-radius: 20px;
+  color: white;
+}
+.app__SwitchButtonIcon {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.app__SwitchButtonContainer > p {
+  margin-right: 7px;
 }
