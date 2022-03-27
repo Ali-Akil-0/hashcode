@@ -375,34 +375,48 @@ const Problem = () => {
                   <p className="app__InputDataPar">Input Data</p>
                 </div>
                 <div className="app__problemInputDataBottom">
-                  <div className="app__DataSets">
-                    <AiOutlineDownload />
-                    <p>Full input (zipped)</p>
-                  </div>
-                  <div className="app__DataSets">
-                    <AiOutlineDownload />
-                    <p>A - An example </p>
-                  </div>
-                  <div className="app__DataSets">
-                    <AiOutlineDownload />
-                    <p>B - Better start small </p>
-                  </div>
-                  <div className="app__DataSets">
-                    <AiOutlineDownload />
-                    <p>C - Collaboration </p>
-                  </div>
-                  <div className="app__DataSets">
-                    <AiOutlineDownload />
-                    <p>D - Dense schedule </p>
-                  </div>
-                  <div className="app__DataSets">
-                    <AiOutlineDownload />
-                    <p>E - Exceptional skills </p>
-                  </div>
-                  <div className="app__DataSets">
-                    <AiOutlineDownload />
-                    <p>F - Find great mentors </p>
-                  </div>
+                  <a href="../../Files/input_data.zip" download>
+                    <div className="app__DataSets">
+                      <AiOutlineDownload />
+                      <p>Full input (zipped)</p>
+                    </div>
+                  </a>
+                  <a href="../../Files/a_an_example.txt" download>
+                    <div className="app__DataSets">
+                      <AiOutlineDownload />
+                      <p>A - An example </p>
+                    </div>
+                  </a>
+                  <a href="../../Files/b_better_start_small.txt" download>
+                    <div className="app__DataSets">
+                      <AiOutlineDownload />
+                      <p>B - Better start small </p>
+                    </div>
+                  </a>
+                  <a href="../../Files/c_collaboration.txt" download>
+                    <div className="app__DataSets">
+                      <AiOutlineDownload />
+                      <p>C - Collaboration </p>
+                    </div>
+                  </a>
+                  <a href="../../Files/d_dense_schedule.txt" download>
+                    <div className="app__DataSets">
+                      <AiOutlineDownload />
+                      <p>D - Dense schedule </p>
+                    </div>
+                  </a>
+                  <a href="../../Files/e_exceptional_skills.txt" download>
+                    <div className="app__DataSets">
+                      <AiOutlineDownload />
+                      <p>E - Exceptional skills </p>
+                    </div>
+                  </a>
+                  <a href="../../Files/f_find_great_mentors.txt" download>
+                    <div className="app__DataSets">
+                      <AiOutlineDownload />
+                      <p>F - Find great mentors </p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
